@@ -2,61 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-        .container {
-         display: flex; 
-         flex-wrap: wrap;  
-         gap: 10px;
-        }
-        .square {
-            width: 150px;
-            height: 150px;
-            background-color: antiquewhite;
-        }
-
-    </style>
-    <body>
-        <div class="container">
-           <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .container {
-      display: flex;
-      flex-direction: row;
-      gap: 5px;
+    .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: aqua;
     }
-
-    .square {
-      width: 100px;
-      height: 100px;
-     background-color: red;
+@media only screen and (max-width:800px){
+    .box1 {
+        border-radius: 50px;
     }
-    @media only screen and (min-width:600px) {
-        .container{
-            flex-direction: column;
-        }
+}
+@media only screen and (max-width:600px){
+    .box1 {
+        border-radius: 500px;
     }
-  </style>
-</head>
+}
+</style>
 <body>
-
-  <div class="container">
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-  </div>
-
+    <div class="box1"></div>
 </body>
-</html>
-
-        </div>
-    </body>
-</body>
-
 </html>
