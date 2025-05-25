@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Centering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+@media only screen and (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .circle {
+    background-color: yellow;
+  }
+}
+</style>
+<body>
+  <div class="flex-container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+</body>
+</html>
